@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@layer base {
+  * {
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+
+  .tnum {
+    font-feature-settings: "tnum" 1, "cv05" 1;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .mono-num {
+    font-family: 'JetBrains Mono', 'Inter', monospace;
+    font-feature-settings: "tnum" 1;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Custom scrollbar for horizontal pill scroll rails and table panning */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.thin-scrollbar::-webkit-scrollbar {
+  height: 4px;
+  width: 4px;
+}
+.thin-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.thin-scrollbar::-webkit-scrollbar-thumb {
+  background: #E0E3EB;
+  border-radius: 9999px;
+}
+.thin-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #c3c5d8;
+}

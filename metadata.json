@@ -1,0 +1,6 @@
+{
+  "name": "Market Precision",
+  "description": "High-performance institutional-grade market data environment with real-time quotes, multi-asset screener, interactive sparklines, and financial depth analysis.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
